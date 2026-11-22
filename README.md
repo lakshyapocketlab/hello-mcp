@@ -7,6 +7,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![node](https://img.shields.io/node/v/@lakshyapocketlab/hello-mcp)](https://nodejs.org)
 [![TypeScript types included](https://img.shields.io/badge/types-TypeScript-blue.svg)](https://www.typescriptlang.org)
+[![mcptry](https://mcptry.com/badge/io.github.lakshyapocketlab/hello)](https://mcptry.com/servers/io.github.lakshyapocketlab/hello)
 
 Connect Claude, Cursor, Codex and other AI assistants to [Hello](https://lakshyapocketlab.com),
 the WhatsApp Business API. Ask the assistant to list your numbers, send messages and templates,
