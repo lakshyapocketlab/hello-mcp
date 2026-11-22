@@ -1,7 +1,11 @@
 # Hello MCP server for the WhatsApp Business API
 
 [![CI](https://github.com/lakshyapocketlab/hello-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/lakshyapocketlab/hello-mcp/actions/workflows/ci.yml)
-[![npm](https://img.shields.io/npm/v/@lakshyapocketlab/hello-mcp)](https://www.npmjs.com/package/@lakshyapocketlab/hello-mcp)
+[![npm version](https://img.shields.io/npm/v/@lakshyapocketlab/hello-mcp)](https://www.npmjs.com/package/@lakshyapocketlab/hello-mcp)
+[![npm downloads](https://img.shields.io/npm/dm/@lakshyapocketlab/hello-mcp)](https://www.npmjs.com/package/@lakshyapocketlab/hello-mcp)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![node](https://img.shields.io/node/v/@lakshyapocketlab/hello-mcp)](https://nodejs.org)
+[![TypeScript types included](https://img.shields.io/badge/types-TypeScript-blue.svg)](https://www.typescriptlang.org)
 
 Connect Claude, Cursor, Codex and other AI assistants to [Hello](https://lakshyapocketlab.com),
 the WhatsApp Business API. Ask the assistant to list your numbers, send messages and templates,
@@ -9,7 +13,7 @@ check delivery and manage templates.
 
 This package is a small **stdio** MCP server for clients that cannot talk to a remote server
 (Claude Desktop, some IDEs). It does not implement any tools itself: it forwards everything to the
-hosted Hello MCP endpoint (`https://api.lakshyapocketlab.com/mcp`), so the tools are always the
+hosted Hello MCP endpoint (`https://helloapi.lakshyapocketlab.com/mcp`), so the tools are always the
 ones the backend serves today.
 
 - Node.js 18 or newer
@@ -21,7 +25,7 @@ ones the backend serves today.
 If your client supports remote (Streamable HTTP) MCP servers, skip this package. For Claude Code:
 
 ```sh
-claude mcp add --transport http hello https://api.lakshyapocketlab.com/mcp \
+claude mcp add --transport http hello https://helloapi.lakshyapocketlab.com/mcp \
   --header "Authorization: Bearer hello_live_…"
 ```
 
@@ -77,7 +81,7 @@ args = ["-y", "@lakshyapocketlab/hello-mcp"]
 env = { HELLO_API_KEY = "hello_live_…" }
 ```
 
-(Codex also supports the hosted server directly: `url = "https://api.lakshyapocketlab.com/mcp"`
+(Codex also supports the hosted server directly: `url = "https://helloapi.lakshyapocketlab.com/mcp"`
 with `bearer_token_env_var = "HELLO_API_KEY"`.)
 
 ## Configuration
@@ -85,7 +89,7 @@ with `bearer_token_env_var = "HELLO_API_KEY"`.)
 | Setting | Default | Description |
 |---|---|---|
 | `HELLO_API_KEY` | required | Your Hello API key. The server exits with an error on stderr if it is missing. |
-| `HELLO_MCP_URL` | `https://api.lakshyapocketlab.com/mcp` | MCP endpoint to proxy to. |
+| `HELLO_MCP_URL` | `https://helloapi.lakshyapocketlab.com/mcp` | MCP endpoint to proxy to. |
 | `--url <url>` | | Same as `HELLO_MCP_URL`; wins over it. |
 | `--help`, `--version` | | Print usage or the version and exit. |
 
@@ -96,7 +100,7 @@ HELLO_API_KEY=hello_live_… npx @lakshyapocketlab/hello-mcp --url http://localh
 ## How it works
 
 ```
-MCP client  ──stdio──▶  hello-mcp  ──Streamable HTTP + Bearer key──▶  https://api.lakshyapocketlab.com/mcp
+MCP client  ──stdio──▶  hello-mcp  ──Streamable HTTP + Bearer key──▶  https://helloapi.lakshyapocketlab.com/mcp
 ```
 
 `initialize`, `tools/list` and `tools/call` (plus prompts and resources if the remote advertises

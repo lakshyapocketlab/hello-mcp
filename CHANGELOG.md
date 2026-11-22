@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1
+
+- Fix: the default MCP endpoint is now `https://helloapi.lakshyapocketlab.com/mcp` (was `api.lakshyapocketlab.com`).
+- README: add status badges.
+
 ## 0.1.0
 
 - Initial release: a stdio MCP server that proxies `initialize`, `tools/list` and `tools/call`

@@ -1,6 +1,6 @@
 import { VERSION } from "./version.js";
 
-export const DEFAULT_URL = "https://api.lakshyapocketlab.com/mcp";
+export const DEFAULT_URL = "https://helloapi.lakshyapocketlab.com/mcp";
 
 export const HELP = `hello-mcp ${VERSION}
 Hello MCP server for the WhatsApp Business API (stdio proxy to the hosted /mcp endpoint).
