@@ -33,4 +33,4 @@ jobs:
       - name: Smoke test the built binary
         run: |
           node dist/bin.js --version
-          ! HELLO_API_KEY= node dist/bin.js
+          ! HELLO_API_KEY='' node dist/bin.js
