@@ -1,6 +1,7 @@
 # Hello MCP server for the WhatsApp Business API
 
 [![CI](https://github.com/lakshyapocketlab/hello-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/lakshyapocketlab/hello-mcp/actions/workflows/ci.yml)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/lakshyapocketlab/hello-mcp/badge)](https://scorecard.dev/viewer/?uri=github.com/lakshyapocketlab/hello-mcp)
 [![npm version](https://img.shields.io/npm/v/@lakshyapocketlab/hello-mcp)](https://www.npmjs.com/package/@lakshyapocketlab/hello-mcp)
 [![npm downloads](https://img.shields.io/npm/dm/@lakshyapocketlab/hello-mcp)](https://www.npmjs.com/package/@lakshyapocketlab/hello-mcp)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
