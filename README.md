@@ -162,6 +162,14 @@ MCP client  ──stdio──▶  hello-mcp  ──Streamable HTTP + Bearer key�
 
 `initialize`, `tools/list` and `tools/call` (plus prompts and resources if the remote advertises them) are forwarded unchanged, and errors from the remote reach your client as-is. Nothing is reimplemented locally, so the tool list and results never drift from the hosted endpoint.
 
+## More examples
+
+The [hello-examples](https://github.com/lakshyapocketlab/hello-examples) repository has setup guides and runnable programs:
+
+- [`ai-agents`](https://github.com/lakshyapocketlab/hello-examples/tree/main/ai-agents): connect Claude Code, Claude Desktop, Cursor or Codex to Hello over MCP
+- [`n8n`](https://github.com/lakshyapocketlab/hello-examples/tree/main/n8n): send messages from n8n workflows
+- [`webhooks`](https://github.com/lakshyapocketlab/hello-examples/tree/main/webhooks): receive and verify webhooks
+
 ## Links
 
 - Docs: [lakshyapocketlab.com/docs](https://lakshyapocketlab.com/docs/), including the [MCP integration guide](https://lakshyapocketlab.com/docs/ai/integrate-with-ai/)
