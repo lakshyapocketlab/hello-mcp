@@ -25,7 +25,7 @@ ones the backend serves today.
 
 Two steps for every client:
 
-1. **Get an API key.** Create one (`hello_live_…`) on the API Keys page of the [Hello dashboard](https://hello.lakshyapocketlab.com).
+1. **Get an API key.** Create one (`hello_live_…`) in the [Hello dashboard](https://hello.lakshyapocketlab.com) under **Integrations**.
 2. **Add the server** to your client, using the snippet for it below.
 
 Claude Code connects to the hosted endpoint directly, which is the recommended setup. Clients that only speak stdio use this npm package instead.

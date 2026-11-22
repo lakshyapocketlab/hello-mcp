@@ -1,6 +1,6 @@
 {
   "name": "@lakshyapocketlab/hello-mcp",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Hello MCP server for the WhatsApp Business API. A stdio proxy to the hosted Hello MCP endpoint for Claude Desktop, Cursor and other stdio clients.",
   "keywords": [
     "whatsapp",

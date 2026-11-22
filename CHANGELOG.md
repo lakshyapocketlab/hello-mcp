@@ -1,6 +1,8 @@
 # Changelog
 
-## 0.1.1
+## 1.0.0
+
+First stable release. The public API follows semantic versioning from here on: breaking changes only in a new major version.
 
 - Fix: the default MCP endpoint is now `https://helloapi.lakshyapocketlab.com/mcp` (was `api.lakshyapocketlab.com`).
 - README: add status badges.
