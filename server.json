@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.lakshyapocketlab/hello",
+  "title": "Hello WhatsApp Business API",
+  "description": "Send WhatsApp messages, templates and media, and manage templates via the WhatsApp Business API.",
+  "version": "1.0.0",
+  "websiteUrl": "https://lakshyapocketlab.com",
+  "repository": {
+    "url": "https://github.com/lakshyapocketlab/hello-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://helloapi.lakshyapocketlab.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer <your Hello API key>, from the Hello dashboard's Integrations page",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
