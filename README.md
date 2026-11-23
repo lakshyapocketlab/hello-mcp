@@ -1,3 +1,10 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/lakshyapocketlab/.github/main/assets/hello-logo-on-dark.svg">
+    <img alt="Hello" src="https://raw.githubusercontent.com/lakshyapocketlab/.github/main/assets/hello-logo.svg" height="56">
+  </picture>
+</p>
+
 # Hello MCP server for the WhatsApp Business API
 
 [![CI](https://github.com/lakshyapocketlab/hello-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/lakshyapocketlab/hello-mcp/actions/workflows/ci.yml)
